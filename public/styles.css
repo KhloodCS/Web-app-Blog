@@ -10874,6 +10874,12 @@ h1 {
   text-align: left !important;
 }
 
+.post-date {
+    font-size: 0.8rem; /* حجم أصغر */
+    color: #555;       /* لون رمادي خفيف */
+}
+
+
 .post {
   background: #fff;
   border-radius: 12px;
