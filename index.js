@@ -31,7 +31,9 @@ app.get("/post", (req, res) => {
 // إضافة بوست جديد
 app.post("/create", (req, res) => {
   const { title, content } = req.body;
-  posts.push({ title, content });
+ const now = new Date(); // الوقت الحالي
+
+  posts.push({ title, content, date: now.toLocaleString() });
   res.redirect("/");
 });
 
